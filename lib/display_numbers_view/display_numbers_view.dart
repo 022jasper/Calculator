@@ -28,11 +28,13 @@ class _DisplayNumbersViewState extends State<DisplayNumbersView> {
         ),
         Expanded(
           flex: 2,
-          child: Container(
-            width: MediaQuery.of(context).size.width,
-            color: Colors.yellow,
-            child: const Text('C'),
-          ),
+          child: TextButton(
+              onPressed: () => {},
+              child: const Text(
+                'C',
+                style: TextStyle(color: Colors.black),
+                textAlign: TextAlign.left,
+              )),
         )
       ],
     );
